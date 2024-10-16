@@ -19,8 +19,6 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var entrar = binding.btEntrar
-        var salir = binding.btSalir
         var entradaValida = true
 
         binding.btEntrar.setOnClickListener {
