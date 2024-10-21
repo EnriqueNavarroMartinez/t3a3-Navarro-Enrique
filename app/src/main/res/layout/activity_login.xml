@@ -68,7 +68,8 @@
             android:id="@+id/tietPassw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/introduce_tu_contrasena">
+            android:hint="@string/introduce_tu_contrasena"
+            android:inputType="textPassword">
 
         </com.google.android.material.textfield.TextInputEditText>
 
