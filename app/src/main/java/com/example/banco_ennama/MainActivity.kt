@@ -1,5 +1,6 @@
 package com.example.banco_ennama
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,11 @@ class MainActivity : AppCompatActivity() {
 
         val usuarioRecibido = intent.getStringExtra("Usuario")
         binding.tv2.text = binding.tv2.text.toString()+usuarioRecibido
+
+        binding.salir.setOnClickListener {
+            val intent = Intent(this, WelcomeActivity::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

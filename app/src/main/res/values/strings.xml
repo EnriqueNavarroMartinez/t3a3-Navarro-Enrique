@@ -10,5 +10,12 @@
     <string name="bienvenido_a">Bienvenido/a</string>
     <string name="bienvenido_a_mi_banco">Bienvenido/a a mi banco</string>
     <string name="entrar2">ENTRAR</string>
+    <string name="posici_n_global">POSICIÓN GLOBAL</string>
+    <string name="transferencias">TRANSFERENCIAS</string>
+    <string name="cambiar_contrase_a">CAMBIAR CONTRASEÑA</string>
+    <string name="movimientos">MOVIMIENTOS</string>
+    <string name="promociones">PROMOCIONES</string>
+    <string name="cajeros">CAJEROS</string>
+    <string name="salir2">SALIR</string>
 
 </resources>
