@@ -4,9 +4,11 @@
     <string name="introduce_tu_dni">introduce tu dni</string>
     <string name="introduce_tu_contrase_a">introduce_tu_contrase_a</string>
     <string name="introduce_tu_contrasena">introduce tu contrasena</string>
-    <string name="entrar">entrar</string>
-    <string name="salir">salir</string>
+    <string name="entrar">Entrar</string>
+    <string name="salir">Salir</string>
     <string name="add_task">Add task</string>
     <string name="bienvenido_a">Bienvenido/a</string>
+    <string name="bienvenido_a_mi_banco">Bienvenido/a a mi banco</string>
+    <string name="entrar2">ENTRAR</string>
 
 </resources>

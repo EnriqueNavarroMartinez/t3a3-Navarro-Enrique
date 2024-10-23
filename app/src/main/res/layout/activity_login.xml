@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@drawable/planta"
+        android:layout_marginTop="64dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -33,18 +41,13 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        >
+        app:layout_constraintTop_toBottomOf="@id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietDni"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:hint="@string/introduce_tu_dni">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
+            android:hint="@string/introduce_tu_dni"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,50 +56,52 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="text"
         app:helperText="Obligatorio"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView">
+        app:layout_constraintTop_toBottomOf="@id/dni">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietPassw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/introduce_tu_contrasena"
-            android:inputType="textPassword">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
+            android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btEntrar"
-        android:layout_width="141dp"
+        android:layout_width="0dp"
         android:layout_height="53dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="96dp"
         android:text="@string/entrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passw" />
+        app:layout_constraintTop_toBottomOf="@id/passw"
+        app:layout_constraintWidth_percent="0.4"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btSalir"
-        android:layout_width="141dp"
+        android:layout_width="0dp"
         android:layout_height="53dp"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="96dp"
         android:text="@string/salir"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passw" />
-
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passw"
+        app:layout_constraintWidth_percent="0.4"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
